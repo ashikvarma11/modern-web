@@ -1,0 +1,124 @@
+:root {
+    --bg-img: url(./06.jpg);
+    --bg-img-sect-2: url(./07.jpg);
+    font-family: 'Josefin Sans', sans-serif;
+    --primary-color:#182037;
+}
+body{
+    overflow: hidden;
+    margin:0;
+    background-color: var(--primary-color);
+}
+html{
+    margin:0;
+}
+
+#sect_1 {
+    position: relative;
+    
+.hero-heading {
+    position: absolute;
+    z-index: 4;
+    margin-top:50vh;
+    left:37%;
+    width: 40%;
+    
+    span {
+        font-size: 5rem;
+        font-weight: 700;
+        color: rgb(13, 39, 59);
+        letter-spacing: 0.25rem;
+    }
+    opacity: 0;
+}
+.parent_sect_1 {
+    box-shadow: 10px 30px #292929;
+}
+
+}
+#sect_2 {
+    position: relative;
+    
+.hero-heading {
+    position: absolute;
+    z-index: 4;
+    margin-top:50vh;
+    left:37%;
+    width: 40%;
+    
+    span {
+        font-size: 5rem;
+        font-weight: 700;
+        color: rgb(13, 39, 59);
+        letter-spacing: 0.25rem;
+    }
+    opacity: 0;
+}
+
+}
+
+
+.sect_1_img {
+    height:100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    background-size: cover;
+    
+    &:nth-child(1) {
+        z-index: 0;
+        background-image: var(--bg-img);
+    }
+    &:nth-child(2) {
+        z-index: 2;
+        clip: rect(100px,500px,400px,0px);
+        background-image: var(--bg-img);   
+    }
+    &:nth-child(3) {
+        z-index: 2;
+        clip: rect(150px,1400px,650px,800px);
+        background-image: var(--bg-img);
+    }
+    &:nth-child(4) {
+        z-index: 2;
+        clip: rect(500px,800px,800px,300px);
+        background-image: var(--bg-img);
+    }
+
+}
+.sect_2_img {
+    height:100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    background-size: cover;
+    
+    &:nth-child(1) {
+        z-index: 3;
+        background-image: var(--bg-img-sect-2);
+    }
+    &:nth-child(2) {
+        z-index: 4;
+        clip: rect(100px,500px,400px,0px);
+        background-image: var(--bg-img-sect-2);   
+    }
+    &:nth-child(3) {
+        z-index: 4;
+        clip: rect(150px,1400px,650px,800px);
+        background-image: var(--bg-img-sect-2);
+    }
+    &:nth-child(4) {
+        z-index: 4;
+        clip: rect(500px,800px,800px,300px);
+        background-image: var(--bg-img-sect-2);
+    }
+
+}
+
+.shadow-wrap {
+        filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+}
+
+
